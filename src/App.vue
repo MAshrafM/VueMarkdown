@@ -12,7 +12,7 @@
       </div>
       <div class="col-md-6">
         <h4 class="light">Preview</h4>
-        <div class="info">
+        <div class="info" v-markdown :key="markdown">
           {{markdown}}
         </div>
       </div>
@@ -40,7 +40,7 @@ textarea{
   outline: none;
 }
 .info {
-  height: 400px;
+  height: 450px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
 }
